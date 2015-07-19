@@ -1,17 +1,12 @@
----
-title: "Reproducible Research: Peer Assessment 1"
-output: 
-  html_document:
-    keep_md: true
----
+# Reproducible Research: Peer Assessment 1
 
 
 ## Loading and preprocessing the data
-```{r}
+
+```r
 activity <- read.csv("activity.csv")
 activity$date <- as.Date(activity$date, "%d-%m-%y")
 naClean_activity <- na.omit(activity)
-
 ```
 ## The Histogramm of the total Steps per Day
 
